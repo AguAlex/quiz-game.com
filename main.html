@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>Welcome to my Quiz Game!
+        </div>
+        <div id="social_media">
+            <a href="https://github.com/AguAlex">
+                <img class="logo" src="github_logo.png">
+            </a>
+            <a href="https://www.instagram.com/aguwxk/">
+                <img class="logo" style="margin-left: 20px;" src="instagram_logo.png">
+            </a>
+           
+        </div>
+    </header>
+
+    <section id="quiz_section">
+        
+        <div class="hquiz_status" onclick="window.location.href = 'html_quiz.html';">
+            <div class="titlu_quiz">
+                 Quiz - HTML
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <img style="width: 100px; height: 100px;" src="html_logo.png">
+
+            </div>
+            <div id="currentScoreH">
+                <div id="clickToStartH">
+                    <p>Click To Start</p>
+                </div>
+
+                <svg viewBox="0 0 36 36" width="100" height="100">
+                    <path
+                      id="svgH";
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831";
+                      fill="none";
+                      stroke="#c2c6ed";
+                      stroke-width="3";
+                      stroke-dasharray="0, 100";
+                    />
+                    <text id="perTxtH" fill="white" x="50%" y="50%" text-anchor="middle" stroke="#51c5cf" stroke-width="0px" dy=".3em" font-size="9px">0%</text>
+                  </svg>
+            </div>
+                
+        </div>
+
+        <div class="cquiz_status" onclick="window.location.href = 'css_quiz.html';">
+            <div class="titlu_quiz">
+                 Quiz - CSS
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <img style="width: 100px; height: 100px;" src="css_logo.png">
+
+            </div>
+            <div id="currentScoreC">
+                <div id="clickToStartC">
+                    <p>Click To Start</p>
+                </div>
+
+                <svg viewBox="0 0 36 36" width="100" height="100">
+                    <path
+                      id="svgC";
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831";
+                      fill="none";
+                      stroke="#c2c6ed";
+                      stroke-width="3";
+                      stroke-dasharray="0, 100";
+                    />
+                    <text id="perTxtC" fill="white" x="50%" y="50%" text-anchor="middle" stroke="#51c5cf" stroke-width="0px" dy=".3em" font-size="9px">0%</text>
+                  </svg>
+
+            </div>
+        </div>
+
+        <div class="jquiz_status" onclick="window.location.href = 'js_quiz.html';">
+            <div class="titlu_quiz">
+                 Quiz - JavaScript
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <img style="width: 400px; height: 100px; object-fit: contain;" src="js_logo.png">
+            </div>
+            <div id="currentScoreJS">
+                <div id="clickToStartJ">
+                    <p>Click To Start</p>
+                </div>
+                
+                <svg viewBox="0 0 36 36" width="100" height="100">
+                    <path
+                      id="svgJ";
+                      d="M18 2.0845
+                        a 15.9155 15.9155 0 0 1 0 31.831
+                        a 15.9155 15.9155 0 0 1 0 -31.831";
+                      fill="none";
+                      stroke="#c2c6ed";
+                      stroke-width="3";
+                      stroke-dasharray="0, 100";
+                    />
+                    <text id="perTxtJ" fill="white" x="50%" y="50%" text-anchor="middle" stroke="#51c5cf" stroke-width="0px" dy=".3em" font-size="9px">0%</text>
+                  </svg>
+            </div>
+        </div>
+
+
+    
+    </section>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button onclick="resetScore()" class="btn">Reset Score</button>
+
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
